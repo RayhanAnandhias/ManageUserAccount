@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author rayhan-andika
  */
-@Document
+@Document(collection = "status")
 public class Status {
     @Id
     private String id;
@@ -24,8 +24,8 @@ public class Status {
 
     public Status() {}
 
-    public Status(String id, String status, String idUser) {
-        this.id = id;
+    public Status(String status, String idUser) {
+        super();
         this.status = status;
         this.idUser = idUser;
     }

@@ -10,7 +10,7 @@ import com.mongodb.MongoClient;
  * @author rayhan & andika
  */
 @Configuration
-@EnableMongoRepositories("db")
+@EnableMongoRepositories("repositories")
 public class MongoConfig extends AbstractMongoConfiguration {
 
     @Override
