@@ -16,28 +16,22 @@ import org.springframework.data.mongodb.core.mapping.*;
 public class User {
     @Id
     private String id;
-    
     private String email;
     private String username;
     private String password;
     private String fullName;
-    private List<String> listIdFollowers;
-    private List<String> listIdFollowing;
-    private List<Status> listStatus;
-    private Date birthDate;
     private Date createdDate;
 
     public User() {}
 
     public User(String email, String username, String password, 
-            String fullName, Date birthDate, Date createdDate) {
+            String fullName, Date createdDate) {
         
         super();
         this.email = email;
         this.username = username;
         this.password = password;
         this.fullName = fullName;
-        this.birthDate = birthDate;
         this.createdDate = createdDate;
     }
     
@@ -81,43 +75,11 @@ public class User {
         this.fullName = fullName;
     }
 
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
     public Date getCreatedDate() {
         return createdDate;
     }
 
     public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
-    }
-
-    public List<String> getListIdFollowers() {
-        return listIdFollowers;
-    }
-
-    public void setListIdFollowers(List<String> listIdFollowers) {
-        this.listIdFollowers = listIdFollowers;
-    }
-
-    public List<String> getListIdFollowing() {
-        return listIdFollowing;
-    }
-
-    public void setListIdFollowing(List<String> listIdFollowing) {
-        this.listIdFollowing = listIdFollowing;
-    }
-
-    public List<Status> getListStatus() {
-        return listStatus;
-    }
-
-    public void setListStatus(List<Status> listStatus) {
-        this.listStatus = listStatus;
     }
 }

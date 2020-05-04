@@ -19,8 +19,6 @@ public class Status {
     
     private String status;
     private String idUser;
-    private List<String> listIdLikerUser;
-    private List<Comment> listCommentar;
 
     public Status() {}
 
@@ -52,22 +50,6 @@ public class Status {
 
     public void setIdUser(String idUser) {
         this.idUser = idUser;
-    }
-
-    public List<String> getListIdLikerUser() {
-        return listIdLikerUser;
-    }
-
-    public void setListIdLikerUser(List<String> listIdLikerUser) {
-        this.listIdLikerUser = listIdLikerUser;
-    }
-
-    public List<Comment> getListCommentar() {
-        return listCommentar;
-    }
-
-    public void setListCommentar(List<Comment> listCommentar) {
-        this.listCommentar = listCommentar;
     }
     
 }
